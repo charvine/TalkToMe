@@ -7,11 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 u = User.new
-u.email = "crossovermeister@gmail.com"           # 可以改成自己的 email
+u.email = "test@gmail.com"           # 可以改成自己的 email
 
-u.password = "a1234567890"                # 最少要六码
+u.password = "111111"                # 最少要六码
 
-u.password_confirmation = "a1234567890"   # 最少要六码
+u.password_confirmation = "111111"   # 最少要六码
 
-u.is_admin = true
+u.is_admin = false
 u.save
