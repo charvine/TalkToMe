@@ -1,0 +1,19 @@
+<h2> New Post </h2>
+
+<%= simple_form_for [:admin, @post] do |f| %>
+
+  <div class="group">
+    <%= f.input :title %>
+  </div>
+
+  <div class="group">
+    <%= f.input :video %>
+  </div>
+
+  <div class="group">
+    <%= f.input :intro %>
+  </div>
+
+  <%= f.submit "Submit", data: { disable_with: "Submitting..." } %>
+
+<% end %>
